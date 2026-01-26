@@ -1,6 +1,9 @@
 # Load the restart_process extension
 load('ext://restart_process', 'docker_build_with_restart')
 
+# Set the Kubernetes context to minikube
+k8s_context('minikube')
+
 ### K8s Config ###
 
 # Uncomment to use secrets
